@@ -57,6 +57,32 @@ body {
     font-weight: 500;
 }
 
+.btn-warning {
+    color: #212529;
+    background-color: #e78413;
+    border-color: #e78413;
+}
+.flex-container {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.flex-item {
+    padding: 5px;
+    margin: 0 62px 15px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    display: inline-block;
+}
+
 span{
     color: #fff;
 }
@@ -64,7 +90,7 @@ span{
 header .navbar{
     /*background: linear-gradient(rgb(88, 104, 178), rgb(86, 102, 175));*/
     background-color:#0C0032;
-    box-shadow: rgb(0 39 255) 0px 0px 15px;
+    box-shadow: #ff0000 0px 0px 15px;
     padding: 1rem 1rem;
 }
 
@@ -116,7 +142,7 @@ body #home .section-right .section-right-inner{
     color: #fff;
 }
 body #home .section-right .section-right-inner ul li{
-    width: 33.33%;
+    width: 50%;
     text-align: center;
 }
 body #home .section-right .section-right-inner ul li button{
@@ -135,6 +161,16 @@ body #home .section-right .section-right-inner .nav-pills .nav-link.active, body
     background-color: #190061;
 }
 
+#button-addon3 .btn-outline-secondary {
+    color: #ffffff;
+    border-color: #3500d3;
+}
+
+#button-addon3 .btn-secondary{
+    color: rgb(255 255 255);    
+    background-color: transparent;
+    border-color: #3500d3;
+}
 
 .btn-primary{
     color: rgb(255, 255, 255);
@@ -268,9 +304,9 @@ body #home .section-right .section-right-inner .nav-pills .nav-link.active, body
 }
 
 section#tableSection .tabel-tabs .nav-pills .nav-link.active, section#tableSection .tabel-tabs .nav-pills .show>.nav-link {
-    color: #4203ff;
+    color: #ff0000;
     background-color: transparent;
-    border-bottom: 3px solid #4203ff;
+    border-bottom: 2px solid #ff0000;
     border-radius: 0;
     font-weight: 600;
 }
@@ -296,7 +332,7 @@ section#tableSection {
 
 section#tableSection ul{
     width: 100%;
-    border-bottom: 1px solid #3500d3;
+    border-bottom: 1px solid #ff0000;
 }
 
 .table {
@@ -415,6 +451,12 @@ section#tableSection ul{
     padding: 3rem 3vw;
     /*box-shadow: rgb(25 25 25 / 25%) 0px 0px 5px;
     background: linear-gradient(rgb(76, 93, 168), rgb(42, 57, 123));*/
+    background-image: url("../images/bg/bg-footer.png"); 
+      /*background-color: #cccccc;*/
+      /*height: 500px;*/
+      background-position: bottom;
+      background-repeat: no-repeat; 
+      background-size: cover; 
 }
 
 
@@ -425,8 +467,12 @@ section#tableSection ul{
     font-size: 16px;
 }
 
+#footer ul li a:hover{
+    color: #ff0000;
+}
+
 .border-top {
-    border-top: 1px solid #3500d3!important;
+    border-top: 1px solid #ff0000!important;
 }
 
 /*@import url("//code.jquery.com/ui/1.10.3/themes/start/jquery-ui.min.css");*/
@@ -490,13 +536,80 @@ section#tableSection ul{
         }
 
 
+@media(max-width: 992px){
+    .flex-item {
+        padding: 5px;
+        margin: 0 57px 15px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        display: inline-block;
+    }
+}
+
 @media(max-width: 768px){
     .card {
         border-radius: 0.5rem;
         margin-top: 15px;
     }
+    .flex-item {
+        padding: 5px;
+        margin: 0 35px 15px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        display: inline-block;
+    }
 }
 
+@media(max-width: 576px){
+    .flex-item {
+        padding: 5px;
+        margin: 0 35px 15px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        display: inline-block;
+    }
+
+    #footer{
+        background-position: bottom;
+        background-size: contain;
+    }
+}
+
+@media(max-width: 425px){
+    .flex-item {
+        padding: 5px;
+        margin: 0 21px 15px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        display: inline-block;
+    }
+}
+
+@media(max-width: 375px){
+    .flex-item {
+        padding: 5px;
+        margin: 0 15px 15px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        display: inline-block;
+    }
+}
+
+@media(max-width: 320px){
+    .flex-item {
+        padding: 5px;
+        margin: 0 8px 15px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        display: inline-block;
+    }
+}
 
 
 
@@ -539,15 +652,15 @@ section#tableSection ul{
           user-select: none;
 }
 .range .rangeslider:before {
-  box-sizing: border-box;
-  width: 100%;
-  height: 16px;
-  background: #00c218;
-  border-radius: 100px;
-  content: "";
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+    box-sizing: border-box;
+    width: 100%;
+    height: 10px;
+    background: #e78413;
+    border-radius: 100px;
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
 }
 .range input::-webkit-slider-runnable-track {
   box-sizing: border-box;
@@ -588,12 +701,12 @@ section#tableSection ul{
   background: #60cd18;
 }
 .range .rangeslider-fill-lower {
-  background-color: #e52206;
+  background-color: #ff0000;
   border-radius: 100px;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  height: 16px;
+  height: 10px;
   will-change: width;
 }
 .range input::-webkit-slider-thumb {
@@ -679,7 +792,7 @@ section#tableSection ul{
   top: -20px;
   /*left: -39px;*/
   transform: translate(-50%, -100%);
-  background: #2a3eaf;
+  background: #ff9800;
   color: #fff;
   border-radius: 100px;
   white-space: nowrap;
@@ -692,7 +805,7 @@ section#tableSection ul{
   position: absolute;
   bottom: -7px;
   left: 50%;
-  border: 10px solid #2a3eaf;
+  border: 10px solid #ff9800;
   border-bottom: none;
   border-left-color: transparent;
   border-right-color: transparent;
@@ -727,13 +840,13 @@ section#tableSection ul{
   cursor: pointer;
 }
 .control li:hover {
-  background: #000;
+  background: #dc3545;
 }
 .control li.prev {
-  left: -50px;
+  left: 0px;
 }
 .control li.next {
-  right: -50px;
+  right: 0px;
 }
 .tns-nav {
   text-align: center;
@@ -787,3 +900,112 @@ section#tableSection ul{
   text-decoration: underline;
   background-color: black;
 }
+
+
+
+/*
+  https://developer.mozilla.org/en/docs/Web/CSS/box-shadow
+  box-shadow: [inset?] [top] [left] [blur] [size] [color];
+
+  Tips:
+    - We're setting all the blurs to 0 since we want a solid fill.
+    - Add the inset keyword so the box-shadow is on the inside of the element
+    - Animating the inset shadow on hover looks like the element is filling in from whatever side you specify ([top] and [left] accept negative values to become [bottom] and [right])
+    - Multiple shadows can be stacked
+    - If you're animating multiple shadows, be sure to keep the same number of shadows on hover/focus as non-hover/focus (even if you have to create a transparent shadow) so the animation is smooth. Otherwise, you'll get something choppy.
+*/
+.fill:hover,
+.fill:focus {
+  box-shadow: inset 0 0 0 2em var(--hover);
+}
+
+.pulse:hover,
+.pulse:focus {
+  -webkit-animation: pulse 1s;
+          animation: pulse 1s;
+  box-shadow: 0 0 0 2em transparent;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 var(--hover);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 var(--hover);
+  }
+}
+.close:hover,
+.close:focus {
+  box-shadow: inset -3.5em 0 0 0 var(--hover), inset 3.5em 0 0 0 var(--hover);
+}
+
+.raise:hover,
+.raise:focus {
+  box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+  transform: translateY(-0.25em);
+}
+
+.up:hover,
+.up:focus {
+  box-shadow: inset 0 -3.25em 0 0 var(--hover);
+}
+
+.slide:hover,
+.slide:focus {
+  box-shadow: inset 39em 0 0 0 var(--hover);
+}
+
+.offset {
+  box-shadow: 0.3em 0.3em 0 0 var(--color), inset 0.3em 0.3em 0 0 var(--color);
+}
+.offset:hover, .offset:focus {
+  box-shadow: 0 0 0 0 var(--hover), inset 6em 3.5em 0 0 var(--hover);
+}
+
+.fill {
+  --color: #a972cb;
+  --hover: #cb72aa;
+}
+
+.pulse {
+  --color: #ef6eae;
+  --hover: #ef8f6e;
+}
+
+.close {
+  --color: #ff7f82;
+  --hover: #ffdc7f;
+}
+
+.raise {
+  --color: #ffa260;
+  --hover: #e5ff60;
+}
+
+.up {
+  --color: #e4cb58;
+  --hover: #94e458;
+}
+
+.slide {
+  --color: #8fc866;
+  --hover: #ff0000;
+}
+
+.offset {
+  --color: #19bc8b;
+  --hover: #1973bc;
+}
+
+button {
+  color: var(--color);
+  transition: 0.25s;
+}
+button:hover, button:focus {
+  border-color: var(--hover);
+  color: #fff;
+}
+ 
