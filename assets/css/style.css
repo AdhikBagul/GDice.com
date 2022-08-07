@@ -87,6 +87,8 @@ span{
     color: #fff;
 }
 
+
+
 header .navbar{
     /*background: linear-gradient(rgb(88, 104, 178), rgb(86, 102, 175));*/
     background-color:#0C0032;
@@ -328,6 +330,7 @@ section#tableSection .tabel-tabs{
 section#tableSection {
     background-color: #190061;
     padding: 30px;
+    margin-bottom: 100px;
 }
 
 section#tableSection ul{
@@ -448,7 +451,7 @@ section#tableSection ul{
 
 #footer{
     color: #ffffff;
-    padding: 3rem 3vw;
+    padding: 5rem 3vw;
     /*box-shadow: rgb(25 25 25 / 25%) 0px 0px 5px;
     background: linear-gradient(rgb(76, 93, 168), rgb(42, 57, 123));*/
     background-image: url("../images/bg/bg-footer.png"); 
@@ -457,6 +460,7 @@ section#tableSection ul{
       background-position: bottom;
       background-repeat: no-repeat; 
       background-size: cover; 
+      box-shadow: #ff0000 0px 0px 15px;
 }
 
 
@@ -834,7 +838,8 @@ table {
   color: #848484;
   font-weight: 500;
   padding: 5px 0;
-  padding-left: 30px;
+  /*padding-left: 30px;*/
+  text-align: center;
   border-bottom: 1px dashed #dddddd;
 }
 /*.pricing-block .features li:before {
@@ -1066,6 +1071,17 @@ table {
 }
 
 @media(max-width: 576px){
+    #footer {
+        color: #ffffff;
+        padding: 1rem 3vw 1px;
+    }
+    .h3, h3 {
+        font-size: 1.5rem;
+    }
+    .h2, h2 {
+        font-size: 2rem;
+        color: #ffffff;
+    }
     .flex-item {
         padding: 5px;
         margin: 0 35px 15px;
