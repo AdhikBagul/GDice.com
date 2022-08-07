@@ -18,6 +18,11 @@
   font-family: Futura_Heavy_BT;
   src: url(../fonts/fonts/FuturaHeavyBT.ttf);
 }
+
+@font-face {
+  font-family: Monitorica-Rg;
+  src: url(../fonts/fonts/Monitorica-Rg.ttf);
+}
 @font-face {
   font-family: Proxima_Nova_Font;
   src: url(../fonts/fonts/ProximaNovaFont.otf);
@@ -30,6 +35,13 @@ h2, h3{
     font-family: Proxima_Nova_Font!important;
 }
 
+.table td, .table th{
+    font-family: Monitorica-Rg;
+}
+
+.range-number, .pricing-block .features li{
+    font-family: Monitorica-Rg;
+}
 
 html, body {
     margin: 0px;
@@ -835,8 +847,8 @@ table {
   display: block;
   font-size: 14px;
   line-height: 30px;
-  color: #848484;
-  font-weight: 500;
+  color: #000000;
+  font-weight: 700;
   padding: 5px 0;
   /*padding-left: 30px;*/
   text-align: center;
