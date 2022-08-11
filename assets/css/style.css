@@ -475,7 +475,19 @@ section#tableSection ul{
       box-shadow: #ff0000 0px 0px 15px;
 }
 
+#footer h3{
+        position: relative;
+    }
 
+#footer h3::after {
+    content: ' ';
+    border-bottom: 3px solid #ff0000;
+    width: 100px;
+    position: absolute;
+    top: 28px;
+    left: 0;
+    z-index: 1400;
+}
 
 #footer ul li a{
     color: #ffffff;
@@ -1083,6 +1095,9 @@ table {
 }
 
 @media(max-width: 576px){
+    #footer .margin-bottom-1-rem{
+        margin-bottom: 1rem!important;
+    }
     #footer {
         color: #ffffff;
         padding: 1rem 3vw 1px;
