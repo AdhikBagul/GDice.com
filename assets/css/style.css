@@ -37,6 +37,8 @@ h2, h3{
 
 .table td, .table th{
     font-family: Monitorica-Rg;
+    text-align: center;
+    width: 20%;
 }
 
 .range-number, .pricing-block .features li{
